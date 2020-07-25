@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+#video-root {
+  position: relative;
+  z-index: 999;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
