@@ -62,7 +62,7 @@ function reducer(state, action) {
     }
 }
 
-function HomePage1(props) {
+function SkillList(props) {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     function selectedItem(item, index) {
@@ -124,4 +124,4 @@ function HomePage1(props) {
     )
 }
 
-export default HomePage1
+export default SkillList
