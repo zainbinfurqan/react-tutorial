@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Player, ControlBar, PlayToggle } from 'video-react';
 import Modal from '../Model'
 import Root_Video from '../Root-Video'
-import './style.css'
+import api from '../../utils/api_1';
 function Home_1(props) {
 
 
@@ -18,9 +18,9 @@ function Home_1(props) {
 
     async function fetchData() {
         try {
-            await fetch('https://jsonplaceholder.typicode.com/posts')
-                .then(response => response.json())
-                .then(json => setPostData(json))
+            let body = { name: 'zain', pass: '123' }
+            const response = await api.apiMethod();
+            console.log("response=>", response)
         } catch (error) {
 
         }
