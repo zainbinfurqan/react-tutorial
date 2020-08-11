@@ -56,7 +56,6 @@ function reducer(state, action) {
     switch (action.type) {
         case 'ON_SELECT':
             return { ...state, ...action.payload };
-
         default:
             return state;
     }
