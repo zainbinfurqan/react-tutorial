@@ -19,7 +19,7 @@ jobs:
       run: npm install
     - name: Deploy to GH Pages
       run: |
-        git config --global user.email ${{secret.USER_EMAIL}}
-        git config --global user.name ${{secret.USER_NAME}}
-        git remote set-url origin https://${{secret.ACCESS_TOKEN}}@github.com/${{secret.USER_NAME}}/react-tutorial.git
+        git config --global user.email ${{secrets.USER_EMAIL}}
+        git config --global user.name ${{secrets.USER_NAME}}
+        git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/${{secret.USER_NAME}}/react-tutorial.git
         npm run deploy
