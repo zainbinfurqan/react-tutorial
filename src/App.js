@@ -13,7 +13,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h2>Github Action deployment</h2>
+      <h2>Github Action deployment 1</h2>
       {/* <SkillList /> */}
       {/* <SkillChips /> */}
       {/* <AppMainIndex /> */}
